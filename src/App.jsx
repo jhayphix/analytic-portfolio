@@ -1,5 +1,6 @@
 // ... React modules
 import { BrowserRouter } from "react-router-dom";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 // ... Context
 import AppContextProvider from "@contexts/AppContextProvider";
@@ -31,6 +32,7 @@ const App = () => {
           <AppLayout>
             <WebRouting />
           </AppLayout>
+          <SpeedInsights />
         </AppContextProvider>
       </BrowserRouter>
     </>
