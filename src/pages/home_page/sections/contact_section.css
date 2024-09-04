@@ -1,0 +1,24 @@
+/* 
+|------------------------------------------------
+| Contact section
+|------------------------------------------------
+*/
+#contact-section form label {
+  padding-left: 1.5rem;
+}
+
+#contact-section form input,
+#contact-section form select {
+  background-color: var(--bg_primary_6);
+  color: var(--text_secondary_1);
+  border: none;
+}
+#contact-section form textarea {
+  background-color: var(--bg_primary_6);
+  color: var(--text_secondary_1);
+  border: none;
+}
+
+#contact-section .card-text .text_container {
+  margin: 1rem 0;
+}

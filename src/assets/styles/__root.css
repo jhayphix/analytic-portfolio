@@ -1,0 +1,180 @@
+/* Dark theme */
+:root {
+  --white_color: #ffffff;
+
+  /*
+  |----------------------------------------
+  | Background
+  |----------------------------------------
+  */
+  /* rgba(32,32,32) , rgba(18,18,18), rgba(29,33,37) */
+  /* Primary colors */
+  --bg_primary_1: rgba(13, 13, 13);
+  --bg_primary_2: rgba(18, 18, 18); /* Footer navigation | About section*/
+  --bg_primary_3: rgba(32, 32, 32); /* Contact info header */
+  --bg_primary_4: rgba(29, 33, 37); /* Stat section */
+  --bg_primary_5: rgba(29, 33, 37); /* Tabs */
+  --bg_primary_6: var(--bg_primary_2);
+
+  --bg_box_shadow: rgba(255, 255, 255, 0.2);
+
+  /* Accent colors */
+  --bg_accent_1: #4a6cf7;
+  --bg_accent_2: #2f449d;
+
+  /* Secondary color */
+  --bg_secondary_1: var(--white_color);
+  --bg_muted_1: #959cb1;
+
+  /* Unchanged */
+  --bg_unchanged_primary: #1e2242;
+  --bg_unchanged_secondary: var(--white_color);
+
+  /* Other */
+  --whatsapp_color: #20b038;
+  --twitter_color: #1da1f2;
+  --facebook_color: #3c5a9a;
+  --linkedin_color: #0077b5;
+  --mail_color: #ea4335;
+
+
+  /*
+  |----------------------------------------
+  | Text
+  |----------------------------------------
+  */
+  /* Primary colors */
+  --text_primary_1: #0a0e32;
+  --text_primary_2: #0c1138;
+  --text_primary_3: #0d133b;
+  --text_primary_4: #131a4a;
+  --text_primary_5: #1e2242;
+  --text_primary_6: #252d4d;
+
+  /* Accent colors */
+  /* --text_accent_1: #1d5df2; */
+  --text_accent_1: #4a7ef2;
+  --text_accent_2: #2f449d;
+  --text_accent_3: rgba(77, 157, 198);
+
+  /* Secondary color */
+  --text_secondary_1: rgba(255, 255, 255, 0.8);
+  --text_muted_1: #959cb1;
+
+  /* Unchanged */
+  --text_unchanged_primary: #1e2242;
+  --text_unchanged_secondary: var(--white_color);
+  --text_unchanged_accent: #4a6cf7;
+
+  --border-red: 2px solid red;
+
+  /*
+  |----------------------------------------
+  | Navbar
+  |----------------------------------------
+  */
+  --bg_navbar_scroll_1: rgba(23, 33, 88, 0.5);
+  --bg_navbar_scroll_2: rgba(31, 38, 135, 0.37);
+
+  /*
+  |----------------------------------------
+  | About
+  |----------------------------------------
+  */
+  --bg_about_card_1: rgba(37, 44, 79, 0.1);
+  --bg_about_card_2: rgba(31, 38, 135, 0.37);
+  --shadow_about_card: 0 2px 1px 0 rgba(31, 38, 135, 0.37);
+
+  /*
+  |----------------------------------------
+  | Shapes
+  |----------------------------------------
+  */
+  /* Left */
+  --shape_left_1: url("@assets/images/bg_shapes/shape_left_1.svg");
+  --shape_left_2: url("@assets/images/bg_shapes/shape_left_2.svg");
+  --shape_left_3: url("@assets/images/bg_shapes/shape_left_3.svg");
+  --shape_left_4: url("@assets/images/bg_shapes/shape_left_4.svg");
+
+  /* Mid */
+  --shape_mid_1: url("@assets/images/bg_shapes/shape_mid_1.svg");
+  --shape_mid_2: url("@assets/images/bg_shapes/shape_mid_2.svg");
+
+  /* Right */
+  --shape_right_1: url("@assets/images/bg_shapes/shape_right_1.svg");
+  --shape_right_2: url("@assets/images/bg_shapes/shape_right_2.svg");
+  --shape_right_3: url("@assets/images/bg_shapes/shape_right_3.svg");
+
+  /* Special */
+  --shape_cross: url("@assets/images/bg_shapes/shape_cross.svg");
+  --shape_cube: url("@assets/images/bg_shapes/shape_cube.svg");
+}
+
+/*
+  |-------------------------------------------------------------------------------
+  | secondary theme
+  |-------------------------------------------------------------------------------
+  */
+
+[data-theme="light"] {
+  /*
+  |----------------------------------------
+  | Background
+  |----------------------------------------
+  */
+  /* Primary colors */
+  --bg_primary_1: #f2f4fe;
+  --bg_primary_2: #dfeafc;
+  --bg_primary_3: #f2f4fe;
+  --bg_primary_4: #e5eafc;
+  --bg_primary_5: #e5eafc;
+  --bg_primary_6: #f9faff;
+
+  --bg_box_shadow: rgba(0, 0, 0, 0.2);
+
+  /* dark color */
+  --bg_secondary_1: #0a0e32;
+
+  /* muted color */
+  --bg_muted_1: #959cb1;
+
+  /*
+  |----------------------------------------
+  | Text
+  |----------------------------------------
+  */
+  /* Primary colors */
+  --text_primary_1: #ffffff;
+  --text_primary_2: #f2f4fe;
+  --text_primary_3: #f2f4fe;
+  --text_primary_4: #e5eafc;
+  --text_primary_5: #e5eafc;
+  --text_primary_6: #ffffff;
+
+  /* dark color */
+  --text_secondary_1: #0a0e32;
+
+  /* Accent */
+  --text_accent_1: #4a7ef2;
+  --text_accent_3: rgba(27, 100, 136, 1);
+
+  /* muted color */
+  --text_muted_1: #959cb1;
+
+  /*
+  |----------------------------------------
+  | Navbar
+  |----------------------------------------
+  */
+  --bg_navbar_scroll_1: rgb(242, 244, 254, 0.7);
+  --bg_navbar_scroll_2: rgb(229, 234, 252, 0.35);
+
+  /*
+  |----------------------------------------
+  | About
+  |----------------------------------------
+  */
+  --bg_about_card_1: rgba(242, 244, 254, 0.25);
+  --bg_about_card_2: rgba(31, 38, 135, 0.37);
+  --shadow_about_card: 0 8px 10px 0 rgba(31, 38, 135, 0.37);
+}

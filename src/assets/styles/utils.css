@@ -1,0 +1,46 @@
+/* 
+  |----------------------------------------------------
+  | Image
+  |----------------------------------------------------
+*/
+
+/* 
+  |----------------------------------------------------
+  | Button
+  |----------------------------------------------------
+*/
+.btn_accent_1,
+.btn_unchanged_primary {
+  transition: background-color 0.5s linear, color 0.5s linear;
+}
+
+.btn_accent_1 {
+  background-color: var(--bg_accent_1);
+  color: var(--text_unchanged_secondary);
+  border: 1px solid transparent;
+}
+.btn_accent_1:hover {
+  background-color: var(--bg_primary_1);
+  border: 1px solid var(--bg_accent_1);
+  color: var(--text_accent_1);
+}
+
+.btn_unchanged_primary {
+  background-color: var(--bg_unchanged_primary);
+  color: var(--text_unchanged_secondary);
+  border: 1px solid transparent;
+}
+.btn_unchanged_primary:hover {
+  background-color: var(--bg_primary_1);
+  color: var(--text_accent_1);
+  border: 1px solid var(--bg_accent_1);
+}
+
+/* 
+  |----------------------------------------------------
+  | Cursor
+  |----------------------------------------------------
+*/
+.cursor_pointer {
+  cursor: pointer;
+}

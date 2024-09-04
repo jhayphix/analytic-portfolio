@@ -1,0 +1,46 @@
+#social_icons_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+#social_icons_container:hover .social_link {
+    display: inline-block;
+    transition: transform 0.1s ease-in-out;
+}
+  
+
+#social_icons_container .social_link .social_icon {
+    font-size: 2rem;
+}
+
+#social_icons_container .social_link:hover .social_icon {
+    color: var(--text_accent_1);
+    color: red;
+}
+
+.social_link.magnify {
+    transform: scale(1.1);
+  }
+
+.text_whatsapp {
+    color: var(--whatsapp_color);
+}
+.text_twitter {
+color: var(--twitter_color);
+}
+.text_facebook {
+color: var(--facebook_color);
+}
+.text_linkedin {
+    color: var(--linkedin_color);
+}
+.text_mail {
+    color: var(--mail_color);
+}
+
+@media only screen and (max-width: 800px) { 
+    .social_link.magnify {
+        transform: scale(1);
+      }
+}

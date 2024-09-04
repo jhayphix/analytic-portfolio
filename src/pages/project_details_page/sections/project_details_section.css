@@ -1,0 +1,41 @@
+.project_details_section {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project_details_section .dashboard_img {
+  width: 80%;
+  /* height: 350px; */
+  height: 70vh;
+}
+
+@media only screen and (max-width: 900px) {
+  .project_details_section .dashboard_img {
+    object-fit: contain;
+    width: 90vw;
+    height: auto !important;
+  }
+}
+
+/* View work book  */
+.view_workbook_link {
+  font-size: 18px;
+  color: var(--text_secondary_1);
+  border-bottom: 1px solid var(--text_secondary_1);
+}
+
+.view_workbook_link:hover {
+  color: var(--text_accent_1);
+  border-bottom-color: var(--text_accent_1);
+}
+
+
+
+.story_section .story_section_container {
+  background-color: var(--bg_primary_3);
+  border-radius: 30px;
+}

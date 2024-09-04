@@ -1,0 +1,211 @@
+:root {
+  --h1_fs: 2.5rem;
+  --h2_fs: 1.9rem;
+  --h3_fs: 1.5rem;
+  --h4_fs: 1.4rem;
+  --normal_fs: 1.2rem;
+  --bullet_fs: 0.9rem;
+
+  --h1_fw: 700;
+  --h2_fw: 600;
+  --h3_fw: 500;
+  --h4_fw: 450;
+  --normal_fw: 300;
+
+  --bullet_dot: "•";
+  --bullet_circle: "\25CB"; /* ○ Circle Bullet */
+  --bullet_square: "\25A0"; /* ■ Square Bullet */
+  --bullet_star: "\2605"; /* ★ Star Bullet */
+  --bullet_diamond: "\2666"; /* ♦ Diamond Bullet */
+  --bullet_check: "\2714"; /* ✔ Check Mark Bullet */
+  --bullet_cross: "\2718"; /* ✘ Cross Bullet */
+  --bullet_triangle: "\25B2"; /* ▲ Triangle Bullet */
+  --bullet_triangle_right: "\25B7"; /* ▷ */
+  --bullet_triangle_fill_right: "\25B6"; /* ▶ */
+  --bullet_arrow: "\2192"; /* → Arrow Bullet */
+}
+
+/*
+  |----------------------------------------
+  | Layout
+  |----------------------------------------
+*/
+/* .__story_section {
+  
+} */
+
+.__story_section_container {
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg_primary_5);
+  border-radius: 20px;
+}
+
+.__story_container {
+  max-width: 800px;
+  width: 100%;
+}
+
+/*
+  |----------------------------------------
+  | Story text : block
+  |----------------------------------------
+*/
+
+.__story_block {
+  margin-bottom: 1.5rem; /* Space between blocks */
+}
+
+.__story_block.h1 {
+  font-size: var(--h1_fs);
+  font-weight: var(--h1_fw);
+  color: var(--text_accent_1);
+}
+.__story_block.h2 {
+  font-size: var(--h2_fs);
+  font-weight: var(--h2_fw);
+  color: var(--text_accent_1);
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+.__story_block.h2:nth-child(1) {
+  margin-top: 0rem;
+}
+
+.__story_block.h3 {
+  font-size: var(--h3_fs);
+  font-weight: var(--h3_fw);
+  margin-bottom: 1rem;
+}
+.__story_block.h4 {
+  font-size: var(--h4_fs);
+  font-weight: var(--h4_fw);
+  margin-bottom: 1rem;
+}
+.__story_block.normal {
+  font-size: var(--normal_fs);
+  font-weight: var(--normal_fw);
+}
+
+/*
+  |----------------------------------------
+  | Code and quote
+  |----------------------------------------
+*/
+/* General styling for the content */
+.__story_block.code {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg_primary_2);
+  line-height: 1.6;
+  padding: 20px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--text_accent_1);
+  border-radius: 2px;
+}
+
+.__story_block.blockquote {
+  line-height: 1.6;
+  padding: 20px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--bg_secondary_1);
+}
+
+.__story_block.__link {
+  text-decoration: underline;
+}
+
+/*
+  |----------------------------------------
+  | Story List : bullet
+  |----------------------------------------
+*/
+
+.__list_bullet {
+  list-style-type: circle;
+  margin-left: 1.5rem;
+  padding-left: 0;
+}
+
+.__list_bullet::before {
+  content: var(--bullet_triangle_fill_right);
+  margin-right: 0.5rem;
+  font-size: var(--bullet_fs);
+  color: var(--text_accent_1);
+}
+
+.__list_number {
+  list-style-type: decimal;
+  margin-left: 1.5rem;
+  padding-left: 0;
+}
+.__list_number::before {
+  content: var(--bullet_star);
+  margin-right: 0.5rem;
+  font-size: var(--bullet_fs);
+  color: var(--text_accent_1);
+}
+
+.__list_number li {
+  margin-bottom: 0.5rem;
+}
+
+/*
+  |----------------------------------------
+  | Font
+  |----------------------------------------
+*/
+.__text_strong {
+  font-weight: bold;
+}
+
+.__text_italic {
+  font-style: italic;
+}
+
+.__text_underline {
+  text-decoration: underline;
+}
+
+.__text_highlight {
+  color: var(--text_accent_1);
+}
+
+
+/*
+  |----------------------------------------
+  | Story Image
+  |----------------------------------------
+*/
+.__story_image {
+  margin-bottom: 1rem; /* Space below images */
+  text-align: center;
+}
+
+.__story_image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.__image_caption {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/*
+  |----------------------------------------
+  | Media Queries
+  |----------------------------------------
+*/
+
+@media only screen and (max-width: 800px) { 
+  .__story_block.h1 {
+    text-align: center;
+  }
+  .__story_block.h2 {
+    text-align: center;
+  }
+  .__story_section_container {
+    padding: 0 0.5rem;
+  }
+ }

@@ -1,0 +1,108 @@
+.navbar {
+  transition: all 0.5s linear;
+}
+.navbar.navbar_scrolled {
+  background-color: var(--bg_navbar_scroll_1) !important;
+  box-shadow: 0 1px 1px 0 var(bg_navbar_scroll_2) !important;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.navbar_nav {
+  border-radius: 1rem;
+  background: var(--bg_primary_5) !important;
+  padding: 0rem 0.5rem;
+  box-shadow: 2px 2px var(--bg_box_shadow);
+}
+
+.navbar_nav .nav_link {
+  border-radius: 1rem;
+  color: var(--text_secondary_1);
+  border: 1px solid transparent;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.navbar_nav .nav_link:hover {
+  color: var(--text_accent_1);
+  border: 1px solid var(--text_accent_1);
+}
+
+.active_nav_link {
+  background-color: var(--bg_accent_1);
+  border-radius: 15px;
+  color: var(--text_unchanged_secondary) !important;
+  transition: background-color 1s ease;
+}
+
+/* Theme */
+.navbar_theme_switch {
+  background-color: var(--bg_primary_5);
+  box-shadow: 2px 2px var(--bg_box_shadow);
+  border-radius: 20px;
+  padding: 1px 10px;
+  border: 1px solid var(--bg_box_shadow);
+}
+
+/* .navbar_theme_switch .form_check_label {
+  border: 2px solid red;
+} */
+
+/* Mobile navigation */
+#mobile_nav .mobile_nav_active {
+  color: var(--text_accent_1);
+}
+
+#mobile_nav .mobile_nav_name {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* 
+|------------------------------------------------
+| Small screen only
+|------------------------------------------------
+*/
+
+/* Medium downward */
+@media only screen and (max-width: 572px) {
+  #navbar {
+    height: 3rem;
+  }
+  #navbar .navbar_nav {
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  #navbar .navbar_container {
+    position: relative;
+  }
+
+  #navbar .navbar-collapse {
+    position: absolute;
+    top: 3rem;
+    right: 5px;
+    width: 17rem;
+  }
+
+  #navbar .navbar-collapse.hide {
+    display: none;
+  }
+  #navbar .navbar-collapse.show {
+    display: initial;
+  }
+
+  #navbar .navbar-collapse .navbar-nav {
+    padding: 20px 10px;
+  }
+
+  #navbar .nav_item .nav_link {
+    padding-left: 15px;
+    border-left: 1px dotted var(--bg_accent_2);
+    border-right: 1px dotted var(--bg_accent_2);
+  }
+  .navbar_theme_switch {
+    /* background-color: var(--bg_primary_5); */
+    box-shadow: 1px 1px var(--bg_box_shadow);
+    border-radius: 20px;
+    padding: 1px 10px;
+    border: none;
+  }
+}

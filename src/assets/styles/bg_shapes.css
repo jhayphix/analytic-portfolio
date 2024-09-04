@@ -1,0 +1,87 @@
+/*
+  |----------------------------------------
+  |  Special
+  |----------------------------------------
+*/
+.bg_shape_cross {
+  background-image: var(--shape_cross);
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-position: bottom left;
+}
+
+/*
+  |----------------------------------------
+  | Lefts
+  |----------------------------------------
+*/
+.bg_shape_l1 {
+  background-image: var(--shape_left_1);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+/*
+  |----------------------------------------
+  | Rights
+  |----------------------------------------
+*/
+.bg_shape_r1 {
+  background-image: var(--shape_right_1);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+/*
+  |----------------------------------------
+  | Mix
+  |----------------------------------------
+*/
+/* Used on Hero section */
+.bg_shape_grp_1 {
+  background-image: var(--shape_left_1), var(--shape_right_1);
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto;
+  background-position: top left, top right;
+}
+
+/* Used on About section */
+.bg_shape_grp_2 {
+  background-image: var(--shape_cross), var(--shape_right_3), var(--shape_cube);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 700px, auto, 200px;
+  background-position: bottom left, top right, top left;
+}
+
+/* Used on Portfolio section */
+.bg_shape_grp_3 {
+  background-image: var(--shape_cross), var(--shape_right_3), var(--shape_cube),
+    var(--shape_left_2);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 700px, auto, 200px, 200px;
+  background-position: bottom left, top right, top left, center center;
+}
+/* Used on Services section */
+.bg_shape_grp_4 {
+  background-image: var(--shape_cross), var(--shape_right_3), var(--shape_cube),
+    var(--shape_left_2);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 700px, auto, 200px, 200px;
+  background-position: bottom left, top right, top left, center center;
+}
+/* Used on Stat section */
+.bg_shape_grp_5 {
+  background-image: var(--shape_cross), var(--shape_right_3), var(--shape_cube);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 500px, auto, 200px;
+  background-position: center center, top right, top left;
+}
+
+/* Used on Contact section */
+.bg_shape_grp_6 {
+  background-image: var(--shape_cross), var(--shape_right_3), var(--shape_cube),
+    var(--shape_left_2);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 700px, auto, 200px, 200px;
+  background-position: bottom left, top right, top left, center center;
+}

@@ -1,0 +1,66 @@
+Hosting:
+    Fix project not showing:
+        ☐ Project not showing on github pages
+
+    Host project on vercel :
+        ☐ Create vercel account
+        ☐ Create a project
+
+Future Fix: 
+    Reference other websites @https://overwatch-coder.vercel.app/:
+        ☐ Resume using latex
+        ☐ Add more to about
+        ☐ Add more to services
+    
+    Handle tab click in url :
+        ☐ Define the route/url for the story tab
+        ☐ Add the route to when the tab is clicked
+        ☐ Get the search parameters
+
+Archive:
+  ✔ Deploy Sanity project: @done(24-09-01 14:35) @project(Hosting)
+  ✔ Learn to deploy sanity project @started(24-09-01 12:11) @done(24-09-01 13:27) @lasted(1h16m3s) @project(Hosting)
+  ✔ Deploy sanity project @done(24-09-01 13:27) @project(Hosting)
+  ✔ Deploy to github @done(24-09-01 14:19) @project(Hosting)
+  ✔ Deploy to github pages: @done(24-09-01 14:35) @project(Hosting)
+  ✔ Deploy to github pages @done(24-09-01 14:35) @project(Hosting)
+  ✔ Create a logo @started(24-08-30 10:54) @done(24-08-30 10:56) @lasted(2m36s) @project(Local Changes.Create a Logo)
+  ✔ Use favicon on website @started(24-08-30 12:04) @done(24-08-30 12:44) @lasted(40m28s) @project(Local Changes.Create a Logo)
+  ✔ Convert jpg to png @done(24-08-30 12:44) @project(Local Changes.Create a Logo)
+  ✔ Create favicon @done(24-08-30 12:44) @project(Local Changes.Create a Logo)
+  ✔ Use it on website @done(24-08-30 12:44) @project(Local Changes.Create a Logo)
+  ✘ Search about extension: @cancelled(24-08-25 17:31) @project(Local Changes)
+  ✘ Quokka extension @started(24-08-25 01:28) @cancelled(24-08-25 02:22) @wasted(54m2s) @project(Local Changes)
+  ✘ Console ninja extension @started(24-08-25 02:22) @cancelled(24-08-25 02:52) @wasted(30m4s) @project(Local Changes)
+  ✔ Search params for project categroy: @done(24-08-25 17:31) @project(Local Changes)
+  ✔ Use search params to get project category @done(24-08-25 17:31) @project(Local Changes)
+  ✔ Work on icons: @done(24-08-24 04:38) @project(Minor Changes)
+  ✔ Add other icons @done(24-08-24 04:38) @project(Minor Changes)
+  ✔ Work on contact form: @done(24-08-24 07:08) @project(Minor Changes)
+  ✔ Remove contact form @done(24-08-24 07:08) @project(Minor Changes)
+  ✔ Render text from down effect: @done(24-08-24 06:36) @project(Minor Changes)
+  ✔ Render project content from profile context instead of from _db : @done(24-08-24 06:36) @project(Minor Changes)
+  ✔ Work on @profile_db.js @done(24-08-24 02:03) @project(Minor Changes.Render project content from profile context instead of from _db )
+  ✔ Serve it in context @done(24-08-24 02:03) @project(Minor Changes.Render project content from profile context instead of from _db )
+  ✔ Check if reference, then return it from context @done(24-08-24 02:03) @project(Minor Changes.Render project content from profile context instead of from _db )
+  ✔ Work on @service_db.js @done(24-08-24 02:54) @project(Minor Changes.Render project content from profile context instead of from _db )
+  ✔ Serve it in context @done(24-08-24 02:54) @project(Minor Changes.Render project content from profile context instead of from _db )
+  ✔ Check if reference, then return it from context @done(24-08-24 02:54) @project(Minor Changes.Render project content from profile context instead of from _db )
+  ✔ Work on @stat_db.js @done(24-08-24 02:54) @project(Minor Changes.Render project content from profile context instead of from _db )
+  ✔ Serve it in context @done(24-08-24 02:54) @project(Minor Changes.Render project content from profile context instead of from _db )
+  ✔ Check if reference, then return it from context @done(24-08-24 02:54) @project(Minor Changes.Render project content from profile context instead of from _db )
+  ✔ A Component for brand name @done(24-08-24 02:54) @project(Minor Changes.Render project content from profile context instead of from _db )
+  ✔ @ContactCard @done(24-08-24 03:18) @project(Minor Changes.Render project content from profile context instead of from _db )
+  ✔ Rendering defualt @DefaultContext @done(24-08-23 06:44) @project(Minor Changes)
+  ✔ Render from context @done(24-08-23 06:44) @project(Minor Changes)
+  ✔ Rename @done(24-08-23 06:44) @project(Minor Changes)
+  ✔ Work on navigations in other js instead of the context @NavigationContextProvider @done(24-08-23 09:00) @project(Minor Changes)
+  ✔ Make the navigation once and extract the nav links for the nav bar @done(24-08-23 09:00) @project(Minor Changes)
+  ✔ Work on pages @done(24-08-23 09:01) @project(Minor Changes)
+  ✔ Rename of tabs and categories @ProjectContextProvider: @done(24-08-23 10:36) @project(Minor Changes)
+  ✔ Work on bread crumb click on project the category should be "all" @BreadCrumb: @done(24-08-23 11:00) @project(Minor Changes)
+  ✔ Work on Mobile responsive: @done(24-08-23 11:00) @project(Minor Changes)
+  ✔ Work on @ProfileContextProvider @started(24-08-23 16:21) @done(24-08-23 16:37) @lasted(16m4s) @project(Minor Changes.Render project content from profile context instead of from _db )
+  ✔ Create @ProfileContextProvider @done(24-08-23 16:36) @project(Minor Changes.Render project content from profile context instead of from _db )
+  ✔ Add it to @AppContextProvider @done(24-08-23 16:36) @project(Minor Changes.Render project content from profile context instead of from _db )
+  ✔ Rename @DashboardStoryTab to @DashboardAndStoryTab @done(24-08-23 16:13) @project(Minor Changes.Render project content from profile context instead of from _db )

@@ -1,0 +1,66 @@
+/* 
+|------------------------------------------------
+| Portfolio
+|------------------------------------------------
+*/
+
+.work-box {
+  margin-bottom: 3rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: var(--bg_primary_4);
+  /* box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.work-box:hover img {
+  transform: scale(1.3);
+}
+
+.work-img {
+  display: block;
+  overflow: hidden;
+}
+
+.work-img img {
+  transition: all 1s;
+  height: 10rem !important;
+  width: 100% !important;
+}
+
+.work-content {
+  padding: 2rem 3% 1rem 4%;
+}
+
+.work-content .w-more {
+  color: var(--text_muted_1);
+  font-size: 0.8rem;
+}
+
+.work-content .w-more .w-category {
+  color: var(--text_secondary_1);
+}
+
+.work-content .w-like {
+  color: var(--text_secondary_1);
+}
+
+.work-content .w-like .plus_link {
+  color: var(--text_secondary_1);
+  transition: var(--transition);
+}
+
+.work-content .w-like .plus_link:hover {
+  color: var(--text_accent_1);
+}
+
+.work-content .w-like .plus_icon {
+  font-size: 3rem;
+}
+
+.work-content .w-like .num-like {
+  font-size: 0.7rem;
+}
+
+.w-title {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,52 @@
+/* 
+  |----------------------------------------
+  | Brand styles
+  |----------------------------------------
+*/
+.brand_wrench {
+  transform: rotate(45deg);
+  animation: brandWrench 8s infinite;
+}
+
+.brand_container {
+  color: white;
+  z-index: 10;
+}
+
+.brand_pencil_write {
+  animation: brandPencilWrite 8s infinite;
+}
+
+/* Wrench animation */
+@keyframes brandWrench {
+  10% {
+    color: yellow;
+    transform: rotate(270deg);
+  }
+  40% {
+    color: rgb(0, 183, 255);
+    transform: rotate(-45deg) scale(0.7);
+  }
+  90% {
+    color: green;
+    transform: rotate(3600deg);
+  }
+}
+
+/* Pencil write */
+@keyframes brandPencilWrite {
+  10% {
+    transform: translateY(-10px);
+  }
+
+  95% {
+    transform: translateY(-35px);
+  }
+}
+
+.hand_holding_pen {
+  height: 50px;
+  width: 50px;
+  transform: translateY(-10px);
+  animation: brandPencilWrite 3s infinite alternate;
+}

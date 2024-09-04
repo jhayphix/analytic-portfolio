@@ -1,0 +1,27 @@
+.breadcrumb-item {
+  font-size: 13px;
+}
+
+.breadcrumb .breadcrumb-item.active {
+  font-weight: bold;
+  color: var(--text_secondary_1);
+}
+
+.breadcrumb-item a {
+  color: var(--text_secondary_1);
+  font-weight: 100;
+}
+
+.breadcrumb-item a:hover {
+  color: red;
+}
+
+.breadcrumb-item::after {
+  content: "/";
+  padding: 0 0.5rem;
+  color: var(--text_secondary_1);
+}
+
+.breadcrumb-item:last-child::after {
+  content: " ";
+}

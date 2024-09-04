@@ -1,0 +1,67 @@
+/*
+  |----------------------------------------
+  | Services
+  |----------------------------------------
+*/
+.service_card {
+  background-color: var(--bg_primary_2);
+  border: 3px solid var(--bg_accent_1);
+  padding: 20px;
+
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  transition: all 0.4s linear;
+}
+
+.service_card:hover {
+  transform: rotate(2deg);
+  cursor: zoom-in;
+}
+.service_card:hover .service_icon_container {
+  transform: rotate(360deg) translateY(-100px);
+}
+
+.service_card .service_icon_container {
+  background-color: var(--bg_primary_5);
+  padding: 10px;
+  border-radius: 10px;
+  width: 70px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.6s ease;
+}
+
+.service_card .service_icon {
+  width: 50px;
+  height: 50px;
+}
+
+/*
+  |----------------------------------------
+  | Stat
+  |----------------------------------------
+*/
+#stat_section .stat_card_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#stat_section .stat_card_container:hover .stat_icon_container {
+  background-color: var(--bg_accent_2);
+}
+
+#stat_section .stat_icon_container {
+  border: 10px solid var(--bg_accent_1);
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+#stat_section .stat_icon {
+  height: 50px;
+  width: 50px;
+}

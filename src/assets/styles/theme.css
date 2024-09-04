@@ -1,0 +1,121 @@
+/*
+  |----------------------------------------
+  | Background
+  |----------------------------------------
+*/
+
+/* Primary */
+.bg_primary_1 {
+  background-color: var(--bg_primary_1) !important;
+  color: var(--text_secondary_1) !important;
+}
+.bg_primary_2 {
+  background-color: var(--bg_primary_2) !important;
+  color: var(--text_secondary_2) !important;
+}
+.bg_primary_3 {
+  background-color: var(--bg_primary_3) !important;
+  color: var(--text_secondary_3) !important;
+}
+.bg_primary_4 {
+  background-color: var(--bg_primary_4) !important;
+  color: var(--text_secondary_4) !important;
+}
+.bg_primary_5 {
+  background-color: var(--bg_primary_5) !important;
+  color: var(--text_secondary_5) !important;
+}
+.bg_primary_6 {
+  background-color: var(--bg_primary_6) !important;
+  color: var(--text_secondary_6) !important;
+}
+
+/* Accent */
+.bg_accent_1 {
+  background-color: var(--bg_accent_1) !important;
+  color: var(--text_secondary_1) !important;
+}
+.bg_accent_2 {
+  background-color: var(--bg_accent_2) !important;
+  color: var(--text_secondary_1) !important;
+}
+
+/* Secondary color */
+.bg_secondary_1 {
+  background-color: var(--bg_secondary_1) !important;
+  color: var(--text_primary_1) !important;
+}
+
+/* Unchanged */
+.bg_unchanged_primary {
+  background-color: var(--bg_unchanged_primary) !important;
+  color: var(--text_unchanged_secondary) !important;
+}
+
+.bg_unchanged_secondary {
+  background-color: var(--bg_unchanged_secondary) !important;
+  color: var(--text_unchanged_primary) !important;
+}
+
+/*
+  |----------------------------------------
+  | Text
+  |----------------------------------------
+*/
+
+/* Primary colors */
+.text_primary_1 {
+  color: var(--text_primary_1) !important;
+}
+.text_primary_2 {
+  color: var(--text_primary_2) !important;
+}
+.text_primary_3 {
+  color: var(--text_primary_3) !important;
+}
+.text_primary_4 {
+  color: var(--text_primary_4) !important;
+}
+.text_primary_5 {
+  color: var(--text_primary_5) !important;
+}
+.text_primary_6 {
+  color: var(--text_primary_6) !important;
+}
+
+/* Accent colors */
+.text_accent_1 {
+  color: var(--text_accent_1) !important;
+}
+.text_accent_2 {
+  color: var(--text_accent_2) !important;
+}
+
+/* Secondary color */
+.text_secondary_1 {
+  color: var(--text_secondary_1) !important;
+}
+.text_muted_1 {
+  color: var(--text_muted_1) !important;
+}
+
+/* Unchanged */
+.text_unchanged_primary {
+  color: var(--text_unchanged_primary) !important;
+}
+.text_unchanged_secondary {
+  color: var(--text_unchanged_secondary) !important;
+}
+
+/*
+  |----------------------------------------
+  | Other Background
+  |----------------------------------------
+*/
+
+
+/*
+  |----------------------------------------
+  | Other Text
+  |----------------------------------------
+*/

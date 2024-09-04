@@ -1,0 +1,35 @@
+.page_banner_container {
+  border-top: 0.2px dotted var(--bg_accent_1);
+  border-bottom: 0.2px dotted var(--bg_accent_1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page_banner_container .page_name {
+  color: var(--text_secondary_1);
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+/* Project Banner */
+.project_banner_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project_banner_container .project_img {
+  width: 80%;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 900px) {
+  .project_img {
+    object-fit: contain;
+    width: 90vw !important;
+    height: auto !important;
+  }
+}
