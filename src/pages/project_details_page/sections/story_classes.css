@@ -100,7 +100,8 @@
   padding: 20px;
   margin-bottom: 1.5rem;
   border-left: 4px solid var(--text_accent_1);
-  border-radius: 2px;
+  border-radius: 7px;
+  overflow-x: scroll;
 }
 
 .__story_block.blockquote {
@@ -202,9 +203,9 @@
   .__story_block.h1 {
     text-align: center;
   }
-  .__story_block.h2 {
+  /* .__story_block.h2 {
     text-align: center;
-  }
+  } */
   .__story_section_container {
     padding: 0 0.5rem;
   }

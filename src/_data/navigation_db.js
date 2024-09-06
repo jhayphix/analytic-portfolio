@@ -6,7 +6,6 @@ import { FaHome, FaBriefcase, FaEnvelope } from "react-icons/fa";
   |----------------------------------------
 */
 
-// const base_route = "/analytic-portfolio";
 const base_route = "";
 const mobile_icon_size = 20;
 
@@ -25,8 +24,8 @@ const navigation_db = {
     end: false,
   },
   service: {
-    name: "Services",
-    path: `${base_route}/services`,
+    name: "Skills",
+    path: `${base_route}/skills`,
     icon: null,
     end: false,
   },

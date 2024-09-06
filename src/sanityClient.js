@@ -12,7 +12,5 @@ const client = createClient({
   // withCredentials: false,
 });
 
-console.log(client);
-
 
 export default client;

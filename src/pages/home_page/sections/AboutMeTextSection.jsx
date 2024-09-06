@@ -26,7 +26,7 @@ const AboutMeTextSection = () => {
 
   return (
     <>
-      <div className="col-md-5 col-sm-9 col-11 text_secondary_1">
+      <div className="text_secondary_1">
         <h2
           className="text-light mt-md-0 mt-3 mb-4 text_secondary_1"
           // style={{ width: "145px" }}
@@ -35,7 +35,7 @@ const AboutMeTextSection = () => {
         </h2>
 
         <div>
-          {aboutMeContent.map(({ text }, index) => {
+          {aboutMeContent?.map(({ text }, index) => {
             return (
               <p className="lead text_secondary_1 mb-3" key={index}>
                 {text}

@@ -44,7 +44,7 @@ const ContactCard = () => {
           </h5>
 
           <div className="glass_morphism_effect card-text text_secondary_1">
-            {basicContactDetails.map(({ text, icon }, index) => {
+            {basicContactDetails?.map(({ text, icon }, index) => {
               return (
                 <div key={index} className="text_container">
                   {icon}

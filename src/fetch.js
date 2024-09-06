@@ -33,8 +33,7 @@ export const fetchPosts = async () => {
   
     try {
       const posts = await client.fetch(query);
-      console.log("Fetching post");
-      // console.log(posts);
+      // console.log("Fetching post");
       return posts;
     } catch (error) {
       console.error('Error fetching posts:', error);

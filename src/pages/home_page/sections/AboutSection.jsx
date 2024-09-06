@@ -27,13 +27,19 @@ const AboutSection = () => {
         <div className="container-lg">
           <div className="row gap-3 justify-content-center">
             {/* Profile */}
-            <AboutContactSection />
+            <div className="col-md-5 col-sm-8 col-12">
+              <AboutContactSection />
+            </div>
 
             {/* About info */}
-            <AboutMeTextSection />
+            <div className="col-md-5 col-sm-9 col-11">
+              <AboutMeTextSection />
+            </div>
 
             {/* Skills */}
-            <SkillsOverviewSection />
+            <div className="col-md-10 col-sm-9 col-11">
+              <SkillsOverviewSection />
+            </div>
           </div>
         </div>
       </section>

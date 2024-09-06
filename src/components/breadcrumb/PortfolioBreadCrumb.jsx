@@ -47,14 +47,15 @@ const PortfolioBreadCrumb = ({ project_category, project_name }) => {
             </Link>
           </li>
           <li className="breadcrumb-item active">
-            <Link
+            {/* <Link
               to={portfolio_path}
               onClick={() => {
                 changeProjectCategory(project_category);
               }}
             >
               {project_category || ""}
-            </Link>
+            </Link> */}
+            {project_category || ""}
           </li>
           <li className="breadcrumb-item active" aria-current="page">
             {project_name || ""}

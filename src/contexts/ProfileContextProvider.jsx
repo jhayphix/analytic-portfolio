@@ -14,6 +14,8 @@ import { createContext } from "react";
 import { contactDetailsData } from "@data/profile_db.js";
 import { aboutMeContentData } from "@data/profile_db.js";
 import { skillsRatingsData } from "@data/profile_db.js";
+import { skillsBadgeData } from "@data/profile_db.js";
+
 import { contactSocialIconsData } from "@data/profile_db.js";
 import serviceData from "@data/service_db";
 import projectStatData from "@data/project_stat_db";
@@ -135,6 +137,8 @@ const ProfileContextProvider = ({ children }) => {
     fullContactSocialIcons,
     fullServiceData,
     projectStats,
+
+    skillsBadgeData,
   };
   /*
   |----------------------------------------

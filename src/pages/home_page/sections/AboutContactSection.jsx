@@ -27,7 +27,7 @@ const AboutContactSection = () => {
 
   return (
     <>
-      <div className="col-md-5 col-sm-8 col-12">
+      <div className="">
         <div className="row justify-content-md-start justify-content-center profile">
           <div
             className="col-md-12 mb-5"
@@ -43,7 +43,7 @@ const AboutContactSection = () => {
 
           <div className="col-md-12 col-11">
             <div id="profile_info">
-              {fullContactDetails.map(({ type, text, icon }, index) => {
+              {fullContactDetails?.map(({ type, text, icon }, index) => {
                 return (
                   <p key={index} className="mb-2">
                     {icon}

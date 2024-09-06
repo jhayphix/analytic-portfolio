@@ -1,11 +1,10 @@
 // ... React modules
-import { useContext } from "react";
 
 // ... Context
-import { ProfileContext } from "@contexts/ProfileContextProvider.jsx";
+import { useContext } from "react";
+import { ProfileContext } from "@contexts/ProfileContextProvider";
 
 // ... Components
-import AnimatedProgressBar from "@components/cards/AnimatedProgressBar";
 
 // ... Assets
 
@@ -16,7 +15,7 @@ import AnimatedProgressBar from "@components/cards/AnimatedProgressBar";
 */
 
 const SkillsOverviewSection = () => {
-  const { skillsChunks } = useContext(ProfileContext);
+  const { skillsBadgeData } = useContext(ProfileContext);
 
   /*
     |----------------------------------------
@@ -24,26 +23,44 @@ const SkillsOverviewSection = () => {
     |----------------------------------------
   */
   return (
-    <div className="col-md-10 col-sm-9 col-11">
-      <p className="h3 mb-4 mt-5">Skills</p>
-      <div className="row skill-mf mb-5">
-        {skillsChunks.map((chunk, chunkIndex) => (
-          <div key={chunkIndex} className="col-md-4 col-12 mb-5">
-            {chunk.map(({ name, rate }, index) => (
-              <div key={index}>
-                <div className="text_muted_1 mt-4 mb-2">
-                  {name.toUpperCase()} {rate}%
-                </div>
-                <AnimatedProgressBar
-                  valueNow={rate}
-                  valueMin="0"
-                  valueMax="100"
-                />
-              </div>
+    <div className="">
+      <p className="h3 mb-4 mt-5">SKILLS</p>
+
+      {skillsBadgeData?.map((section) => (
+        <div key={section.title} style={{ marginBottom: "40px" }}>
+          <h3
+            style={{
+              fontSize: "1.2rem",
+              marginBottom: "15px",
+              opacity: "0.8",
+            }}
+            className="text_secondary_2"
+          >
+            {section.title}
+          </h3>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "10px",
+              marginBottom: "10px",
+            }}
+          >
+            {section.skills.map((skill) => (
+              <img
+                key={skill.name}
+                src={skill.url}
+                alt={skill.name}
+                style={{ height: "30px" }}
+              />
             ))}
           </div>
-        ))}
-      </div>
+          <hr
+            style={{ border: "none", height: "1px" }}
+            className="bg_secondary_1 mt-3"
+          />
+        </div>
+      ))}
     </div>
   );
 };
