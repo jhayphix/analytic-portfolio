@@ -1,12 +1,13 @@
 // ... React modules
-// import { Link } from "react-router-dom";
-// import { useContext } from "react";
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+
 import {
   FaWrench,
 } from "react-icons/fa";
-// import { FaWrench, FaHandPaper, FaPencilAlt } from "react-icons/fa";
 
 // ... Context
+import {NavigationContext} from "@contexts/NavigationContextProvider.jsx"
 
 // ... Components
 import AutoWriteText from "@components/config/AutoWriteText";
@@ -17,13 +18,13 @@ import ButtonStar from "@components/buttons/ButtonStar";
 import SocialIcons from "@components/icons/SocialIcons";
 
 // ... Assets
-
 /*
   |----------------------------------------------------------------------------
   |----------------------------------------------------------------------------
   |----------------------------------------------------------------------------
 */
 const HeroSection = () => {
+  const {about} = useContext(NavigationContext)
   /*
     |----------------------------------------
     | Return
@@ -61,9 +62,9 @@ const HeroSection = () => {
 
           {/* Action buttons */}
           <div className="hero_btn_container d-flex align-items-center justify-content-center">
-            <a href="#about-section" className="me-4">
+            <Link to={about?.path} className="me-4">
               <ButtonStar btn_text="Explore" />
-            </a>
+            </Link>
 
             <ButtonDownloadCV />
           </div>

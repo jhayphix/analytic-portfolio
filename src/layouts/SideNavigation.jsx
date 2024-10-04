@@ -17,7 +17,7 @@ const SideNavigation = () => {
   |----------------------------------------
   */
 
-  const { nav_links, home } = useContext(NavigationContext);
+  const { nav_links, home, web_dev_url } = useContext(NavigationContext);
   const { switchTheme, theme } = useContext(ThemeContext);
 
   /*
@@ -37,7 +37,7 @@ const SideNavigation = () => {
         <BrandName />
       </Link>
 
-      <ul className="navbar-nav flex-grow-1">
+      <ul className="flex-grow-1 navbar-nav">
         {nav_links_db?.map(({ name, path, end, icon }, index) => {
           return (
             <li className="nav-item side_nav_item mb-3" key={index}>
@@ -59,6 +59,21 @@ const SideNavigation = () => {
           );
         })}
       </ul>
+
+      {/* Other portfolio */}
+      <div className="flex-grow-1 ">
+        <div className="border-bottom border-muted text-muted mb-2">Other</div>
+        <div className="nav-item side_nav_item">
+          <a
+            className="nav-link side_nav_link py-1 ps-1"
+            href={web_dev_url}
+            rel="noreferrer"
+            target="_blank"
+          >
+            My WebDev Portfolio
+          </a>
+        </div>
+      </div>
 
       <div className="mb-4">
         {" "}

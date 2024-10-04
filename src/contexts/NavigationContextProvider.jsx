@@ -25,16 +25,18 @@ export const NavigationContext = createContext({
   dashboard: {},
   service: {},
   contact: {},
+
+  // Custom url
+  resume_path: "",
 });
 
 const NavigationContextProvider = ({ children }) => {
   /*
   |----------------------------------------
-  | Assign
+  | Extract navigations
   |----------------------------------------
   */
 
-  // New db
   const base_route = navigation_db?.base_route;
 
   const home = navigation_db?.home;
@@ -50,11 +52,16 @@ const NavigationContextProvider = ({ children }) => {
 
   /*
   |----------------------------------------
-  | URL
+  | Custom route
   |----------------------------------------
   */
+  const resume_path = `${base_route}/documents/resume.pdf`;
+  const web_dev_url = "https://jhayphix.github.io/portfolio";
+
   const projectDetailsURL = (category, slug, id) => {
-    const path = `${base_route}/p/${category}/${slug}-${id}`;
+    // const path = `${base_route}/p/${category}/${slug}-${id}`;
+    // Not using category anymore
+    const path = `${base_route}/p/${slug}-${id}`;
     return path;
   };
 
@@ -75,7 +82,10 @@ const NavigationContextProvider = ({ children }) => {
     service,
     contact,
 
+    // Custom path
     projectDetailsURL,
+    resume_path,
+    web_dev_url,
   };
 
   /*

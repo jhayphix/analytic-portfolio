@@ -13,6 +13,7 @@ import ProjectDetailsPage from "@pages/project_details_page/ProjectDetailsPage";
 import HomePage from "@pages/home_page/HomePage";
 import PortfolioPage from "@pages/portfolio_page/PortfolioPage";
 import ServicePage from "@pages/service_page/ServicePage";
+import ExperiencePage from "@pages/experience_page/ExperiencePage"
 
 // ... Assets
 
@@ -28,7 +29,7 @@ const WebRouting = () => {
   | Comment here
   |----------------------------------------
   */
-  const { home, about, portfolio, dashboard, service, contact } =
+  const { home, about, portfolio, dashboard, service, contact, experience } =
     useContext(NavigationContext);
 
   return (
@@ -46,6 +47,9 @@ const WebRouting = () => {
         {/* Services page */}
         <Route path={service?.path} element={<ServicePage />} />
 
+        {/* Experience Page */}
+        <Route path={experience?.path} element={<ExperiencePage />} />
+
         {/* Contact page */}
         <Route path={contact?.path} element={<ContactPage />} />
 
@@ -53,7 +57,7 @@ const WebRouting = () => {
         <Route path={dashboard?.path} element={<ProjectDetailsPage />} />
 
         {/* Not found */}
-        <Route path="*" element="Not Found" />
+        <Route path="*" element="Page Not Found" />
       </Routes>
     </AnimatePresence>
   );

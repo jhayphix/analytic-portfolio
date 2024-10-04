@@ -41,7 +41,7 @@ const StorySection = () => {
     setSearchParams({ tab: first_story_tab_name });
 
     // eslint-disable-next-line
-  }, []);
+  }, [first_story_tab_name]);
 
   // Update search parameters when a tab is clicked
   const handleTabSearchParams = (tab_name) => {

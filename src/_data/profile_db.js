@@ -89,15 +89,15 @@ export const contactSocialIconsData = [
 export const aboutMeContentData = [
   {
     id: 1,
-    text: "I am a skilled data analyst with a passion for transforming raw data into meaningful insights.",
+    text: "I am a Statistics graduate and a skilled data analyst with a passion for transforming raw data into meaningful insights.",
   },
   {
     id: 2,
-    text: "Over the course of three years, I've honed my expertise in essential tools like Excel, Tableau, SQL, and Python. ",
+    text: "Over the course of four years, I've honed my expertise in essential tools like Excel, Tableau, SQL, R and Python. ",
   },
   {
     id: 3,
-    text: "Specifically mastering data cleaning, exploration, and visualization. ",
+    text: "Specifically mastering data cleaning, exploration, and visualization. Also Regression and Timeseries ",
   },
   {
     id: 4,
@@ -138,6 +138,7 @@ export const skillsBadgeData = [
       { name: "MySQL", url: "https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" },
       { name: "Tableau", url: "https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" },
       { name: "Excel", url: "https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" },
+      { name: "SPSS", url: "https://img.shields.io/badge/SPSS-003399?style=for-the-badge&logo=spss&logoColor=white" },
       { name: "Octave", url: "https://img.shields.io/badge/Octave-0790C0?style=for-the-badge&logo=octave&logoColor=white" },
       { name: "Matplotlib", url: "https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white" },
       { name: "Figma", url: "https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" },
