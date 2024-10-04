@@ -14,6 +14,7 @@ const ButtonDownloadCV = () => {
     window.open(resume_path, "_blank");
   };
 
+
   return (
     <ButtonDocument onClick={handleDownloadClick} btn_text="View My Resume" />
   );
