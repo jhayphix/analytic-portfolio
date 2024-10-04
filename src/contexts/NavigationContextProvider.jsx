@@ -55,7 +55,7 @@ const NavigationContextProvider = ({ children }) => {
   | Custom route
   |----------------------------------------
   */
-  const resume_path = `${process.env.PUBLIC_URL}/documents/resume.pdf`;
+  const resume_path = `${base_route}/documents/samuel_ablordeppey_resume.pdf`;
   const web_dev_url = "https://jhayphix.github.io/portfolio";
 
   const projectDetailsURL = (category, slug, id) => {
