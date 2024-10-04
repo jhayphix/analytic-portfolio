@@ -20,6 +20,7 @@ export const NavigationContext = createContext({
 
   home: {},
   about: {},
+  experience: {},
   portfolio: {},
   dashboard: {},
   service: {},
@@ -38,13 +39,14 @@ const NavigationContextProvider = ({ children }) => {
 
   const home = navigation_db?.home;
   const about = navigation_db?.about;
+  const experience = navigation_db?.experience;
   const portfolio = navigation_db?.portfolio;
   const dashboard = navigation_db?.project;
   const service = navigation_db?.service;
   const contact = navigation_db?.contact;
 
-  const nav_links = [home, portfolio, about, service, contact];
-  const mobile_nav_links = [contact, home, portfolio];
+  const nav_links = [home, about, experience, portfolio, service, contact];
+  const mobile_nav_links = [home, about, portfolio, service, contact];
 
   /*
   |----------------------------------------
@@ -67,6 +69,7 @@ const NavigationContextProvider = ({ children }) => {
     base_route,
     home,
     about,
+    experience,
     portfolio,
     dashboard,
     service,

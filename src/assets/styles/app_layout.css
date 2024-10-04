@@ -61,10 +61,67 @@ body::-webkit-scrollbar-thumb:hover {
   | App layout container
   |----------------------------------------
 */
-
 #app_layout_container {
   background-color: var(--bg_primary_1) !important;
   color: var(--text_secondary_1) !important;
+  margin: 0;
+  padding-top: 10px;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+#side_navigation {
+  /* border-right: 0.4px solid var(--bg_accent_1); */
+  padding-top: 10px;
+}
+#main_content_wrapper {
+  height: 100%;
+  overflow: scroll;
+  /* background-color: var(--bg_primary_1); */
+  border-radius: 10px;
+  padding: 0 !important;
+}
+
+
+/* Vertical Scrollbar */
+#main_content_wrapper::-webkit-scrollbar {
+  width: 7px; /* Width of the vertical scrollbar */
+}
+
+/* Track */
+#main_content_wrapper::-webkit-scrollbar-track {
+  background: var(--bg_primary_1); /* Background of the scrollbar track */
+}
+
+/* Handle */
+#main_content_wrapper::-webkit-scrollbar-thumb {
+  background: var(--bg_accent_1); /* Background of the scrollbar handle */
+  border-radius: 20px; /* Rounded corners for the handle */
+}
+
+/* Handle on hover */
+#main_content_wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the handle on hover */
+}
+
+/* Horizontal Scrollbar */
+#main_content_wrapper::-webkit-scrollbar {
+  height: 7px; /* Height of the horizontal scrollbar */
+}
+
+/* Horizontal Track */
+#main_content_wrapper::-webkit-scrollbar-track {
+  background: var(--bg_primary_1); /* Background of the horizontal scrollbar track */
+}
+
+/* Horizontal Handle */
+#main_content_wrapper::-webkit-scrollbar-thumb {
+  background: var(--bg_accent_1); /* Background of the horizontal scrollbar handle */
+}
+
+/* Horizontal Handle on hover */
+#main_content_wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the handle on hover */
 }
 
 /*

@@ -1,3 +1,22 @@
+/* Side Navigation */
+.side_nav_link:hover {
+  background-color: var(--bg_accent_1);
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+}
+
+.active_side_nav_link {
+  background-color: var(--bg_accent_1);
+  border-top-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  color: white !important;
+}
+
+
+
+/* End of Side navigation */
+
 .navbar {
   transition: all 0.5s linear;
 }

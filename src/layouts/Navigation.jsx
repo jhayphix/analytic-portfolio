@@ -31,7 +31,6 @@ const Navigation = () => {
   const { switchTheme, theme } = useContext(ThemeContext);
   const [nav_scrolled, setNavScrolled] = useState(false);
   const [link_clicked, setLinkClicked] = useState(false);
-
   /*
   |----------------------------------------
   |  Functions
@@ -68,7 +67,7 @@ const Navigation = () => {
   return (
     <nav
       id="navbar"
-      className={`navbar py-sm-2 py-0 navbar-expand-${nav_expands_at} sticky-top ${
+      className={`navbar d-sm-none d-block py-sm-2 py-0 navbar-expand-${nav_expands_at} sticky-top ${
         nav_scrolled ? "navbar_scrolled bg_shape_grp_1" : ""
       }`}
     >

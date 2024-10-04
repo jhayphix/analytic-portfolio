@@ -25,7 +25,8 @@ const ThemeContextProvider = ({ children }) => {
   | Theme config
   |----------------------------------------
   */
-  const [theme, setTheme] = useLocalStorage("theme" ? "light" : "dark");
+  // const [theme, setTheme] = useLocalStorage("theme" ? "light" : "dark");
+  const [theme, setTheme] = useLocalStorage("theme", "light");
   const switchTheme = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);

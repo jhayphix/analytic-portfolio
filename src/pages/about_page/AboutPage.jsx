@@ -7,7 +7,7 @@ import PageTransition from "@layouts/PageTransition";
 
 // ... Components
 import AboutSection from "@pages/home_page/sections/AboutSection";
-import ProjectStatSection from "@pages/home_page/sections/ProjectStatSection";
+// import ProjectStatSection from "@pages/home_page/sections/ProjectStatSection";
 import PageBannerSection from "@components/banners/PageBannerSection";
 
 // ... Assets
@@ -29,7 +29,7 @@ const AboutPage = () => {
       <PageTransition effect={about_page_effect}>
         <PageBannerSection pageName="About Me" />
         <AboutSection />
-        <ProjectStatSection />
+        {/* <ProjectStatSection /> */}
         {/* <ServiceSection showHeader={true} /> */}
       </PageTransition>
     </>

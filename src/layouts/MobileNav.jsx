@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useContext } from "react";
-import { BsArrowUp } from "react-icons/bs";
+// import { BsArrowUp } from "react-icons/bs";
 // import { FaWhatsapp } from "react-icons/fa";
 
 // Context
@@ -10,12 +10,12 @@ const MobileNav = () => {
   const { mobile_nav_links } = useContext(NavigationContext);
 
   // Scroll to the top function
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth", // This enables smooth scrolling
-    });
-  };
+  // const scrollToTop = () => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // };
 
   return (
     <nav
@@ -55,10 +55,10 @@ const MobileNav = () => {
           })}
 
           {/*  */}
-          <div className="col">
+          {/* <div className="col">
             <BsArrowUp onClick={scrollToTop} size={20} />
             <div className="mobile_nav_name">To Top</div>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>
