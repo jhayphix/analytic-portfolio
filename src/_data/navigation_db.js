@@ -13,7 +13,7 @@ import {
   |----------------------------------------
 */
 
-const base_route = "/analytic-portfolio";
+const base_route = "";
 const mobile_icon_size = 20;
 
 const navigation_db = {
