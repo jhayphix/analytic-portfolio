@@ -56,7 +56,7 @@ const NavigationContextProvider = ({ children }) => {
   |----------------------------------------
   */
   const resume_path = `${base_route}/documents/samuel_ablordeppey_resume.pdf`;
-  const web_dev_url = "https://jhayphix.github.io/portfolio";
+  const web_dev_url = "https://jhayphix.vercel.app/";
 
   const projectDetailsURL = (category, slug, id) => {
     // const path = `${base_route}/p/${category}/${slug}-${id}`;

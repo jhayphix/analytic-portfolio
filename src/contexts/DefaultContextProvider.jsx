@@ -14,7 +14,8 @@ import DefDashboardImg1 from "@assets/images/default_dashboard/dashboard_img_1.p
 import DefDashboardImg2 from "@assets/images/default_dashboard/dashboard_img_2.png";
 import DefDashboardImg3 from "@assets/images/default_dashboard/dashboard_img_3.png";
 import handHoldFeather from "@assets/images/icons/hand_hold_feather.svg";
-import PortraitImg from "@assets/images/portrait/avatar_dark.png";
+// import PortraitImg from "@assets/images/portrait/avatar_dark.png";
+import PortraitImg from "@assets/images/portrait/portrait.png";
 
 export const DefaultContext = createContext({
   def_project_img_1: "",
