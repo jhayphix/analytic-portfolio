@@ -13,7 +13,7 @@ import {NavigationContext} from "@contexts/NavigationContextProvider.jsx"
 import AutoWriteText from "@components/config/AutoWriteText";
 import HandHoldPenSvg from "@components/svg_icons/HandHoldPenSvg";
 
-import ButtonDownloadCV from "@components/buttons/ButtonDownloadCV";
+import ButtonDocument from "@components/buttons/ButtonDocument";
 import ButtonStar from "@components/buttons/ButtonStar";
 import SocialIcons from "@components/icons/SocialIcons";
 
@@ -24,7 +24,7 @@ import SocialIcons from "@components/icons/SocialIcons";
   |----------------------------------------------------------------------------
 */
 const HeroSection = () => {
-  const {about} = useContext(NavigationContext)
+  const { about } = useContext(NavigationContext);
   /*
     |----------------------------------------
     | Return
@@ -66,7 +66,7 @@ const HeroSection = () => {
               <ButtonStar btn_text="Explore" />
             </Link>
 
-            <ButtonDownloadCV />
+            <ButtonDocument />
           </div>
         </div>
       </div>
