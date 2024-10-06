@@ -25,9 +25,6 @@ export const NavigationContext = createContext({
   dashboard: {},
   service: {},
   contact: {},
-
-  // Custom url
-  resume_path: "",
 });
 
 const NavigationContextProvider = ({ children }) => {
@@ -55,7 +52,6 @@ const NavigationContextProvider = ({ children }) => {
   | Custom route
   |----------------------------------------
   */
-  const resume_path = `${base_route}/documents/samuel_ablordeppey_resume.pdf`;
   const web_dev_url = "https://jhayphix.vercel.app/";
 
   const projectDetailsURL = (category, slug, id) => {
@@ -84,7 +80,6 @@ const NavigationContextProvider = ({ children }) => {
 
     // Custom path
     projectDetailsURL,
-    resume_path,
     web_dev_url,
   };
 
