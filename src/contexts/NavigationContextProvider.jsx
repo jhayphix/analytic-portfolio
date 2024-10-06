@@ -55,7 +55,6 @@ const NavigationContextProvider = ({ children }) => {
   const web_dev_url = "https://jhayphix.vercel.app/";
 
   const projectDetailsURL = (category, slug, id) => {
-    // const path = `${base_route}/p/${category}/${slug}-${id}`;
     // Not using category anymore
     const path = `${base_route}/p/${slug}-${id}`;
     return path;
