@@ -25,7 +25,11 @@ const renderMarks = (marks) => {
 
 const StorySection = () => {
   // Access the active project from the ProjectContext
-  const { active_project } = useContext(ProjectContext);
+  const {
+    active_project,
+    setActiveDashboardAndStoryTab,
+    setActiveDashboardAndStoryIndex,
+  } = useContext(ProjectContext);
 
   // Extract project stories and their tabs
   const project_stories = active_project?.stories;
@@ -38,7 +42,9 @@ const StorySection = () => {
 
   useEffect(() => {
     // Set the search parameter to the first story's tab name on initial render
-    setSearchParams({ tab: first_story_tab_name });
+    if (first_story_tab_name) {
+      setSearchParams({ tab: first_story_tab_name });
+    }
 
     // eslint-disable-next-line
   }, [first_story_tab_name]);
@@ -130,7 +136,20 @@ const StorySection = () => {
               }
             })
           ) : (
-            <div>Story is currently unavailable...</div>
+            <>
+              <div className="text-muted">
+                Story is currently unavailable...
+              </div>
+              <div
+                className="mt-4 cursor_pointer text-decoration-underline text_accent_1"
+                onClick={() => {
+                  setActiveDashboardAndStoryTab("dashboard");
+                  setActiveDashboardAndStoryIndex(0);
+                }}
+              >
+                View Dashboard
+              </div>
+            </>
           )}
         </div>
       </div>

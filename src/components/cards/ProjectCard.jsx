@@ -25,6 +25,7 @@ const ProjectCard = ({ project }) => {
   const project_main_image = project?.main_image?.asset?.url || "";
   const project_title = project?.title || "Title";
   const project_type = project?.project_type || "Type";
+  const project_story = project?.stories;
 
   /*
     |----------------------------------------
@@ -72,8 +73,10 @@ const ProjectCard = ({ project }) => {
                 onClick={() => handleProjectClick(project)}
                 role="link"
               >
-                {" "}
-                <BiPlusCircle className="plus_icon" />
+                <BiPlusCircle
+                  className="plus_icon"
+                  color={project_story ? "#28a745" : ""}
+                />
               </div>
             </div>
           </div>

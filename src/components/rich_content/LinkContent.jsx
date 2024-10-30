@@ -14,7 +14,7 @@ const LinkContent = ({ style, children, renderMarks, markDefs }) => {
       {children &&
         children?.map((child) => (
           <span key={child._key} className={renderMarks(child.marks)}>
-            {child.text} okay
+            {child.text}
           </span>
         ))}
     </a>
