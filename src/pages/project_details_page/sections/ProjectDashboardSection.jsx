@@ -17,18 +17,19 @@ import DefaultDashboardSection from "@pages/project_details_page/sections/Defaul
 */
 const ProjectDashboardSection = () => {
   // Context
-  const {active_project} = useContext(ProjectContext);
+  const { active_project } = useContext(ProjectContext);
 
-  const project_category = active_project?.categories?.[0]?.title || "Category";
-  const mod_project_category = project_category?.toLowerCase()
-  const project_iframe_status = active_project?.iframe_status || false
+  // const project_category = active_project?.categories?.[0]?.title || "Category";
+  // const mod_project_category = project_category?.toLowerCase();
+  const project_iframe_status = active_project?.iframe_status || false;
 
   /*
   |----------------------------------------
   | Return
   |----------------------------------------
   */
-  if (mod_project_category === "excel" && project_iframe_status === true) {
+  // if (mod_project_category === "excel" && project_iframe_status === true) {
+  if (project_iframe_status === true) {
     return <ExcelDashboardSection />;
   } else {
     return <DefaultDashboardSection />;

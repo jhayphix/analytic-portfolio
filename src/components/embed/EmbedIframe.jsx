@@ -27,9 +27,8 @@ const EmbedIframe = ({ iframe_src, iframe_height, iframe_width }) => {
        title="Excel embed"
        width={width}
        height={height}
-       // frameBorder="0"
-       // scrolling="no"
-       srcDoc={`<iframe width=${width} height=${height} frameborder="0" scrolling="no" src="${iframe_src}"></iframe>`}
+       //  scrolling="yes"
+       srcDoc={`<iframe width=${width} height=${height} frameborder="0" scrolling="yes" src="${iframe_src}"></iframe>`}
      ></iframe>
    </div>
  );
