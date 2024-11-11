@@ -1,3 +1,6 @@
+// For both excel and python because of iframe
+
+
 // ... React modules
 import { useContext } from "react";
 
@@ -6,6 +9,7 @@ import { ProjectContext } from "@contexts/ProjectContextProvider.jsx";
 
 // ... Components
 import EmbedIframe from "@components/embed/EmbedIframe";
+import EmbedIframe2 from "@components/embed/EmbedIframe2";
 
 // ... Assets
 
@@ -19,9 +23,9 @@ const ExcelDashboardSection = () => {
 
   
   const iframe_src = active_project?.iframe_src;
-  const iframe_height = active_project?.iframe_height || "600";
-  const iframe_width = active_project?.iframe_width || "100";
   const iframe_url = active_project?.iframe_url;
+  const project_category = active_project?.categories?.[0]?.title || "Category";
+  const porject_category_lowercase = project_category?.toLowerCase();
 
   /*
   |----------------------------------------
@@ -40,7 +44,13 @@ const ExcelDashboardSection = () => {
           View full-size workbook
         </a>
       </div>
-      <EmbedIframe iframe_src={iframe_src} iframe_height={iframe_height} iframe_width={`${iframe_width}%`} />
+      {
+        porject_category_lowercase === "excel" && <EmbedIframe iframe_src={iframe_src} />
+      }
+      {
+        porject_category_lowercase === "python" && <EmbedIframe2 iframe_src={iframe_src} />
+      }
+      
     </>
   );
 };
