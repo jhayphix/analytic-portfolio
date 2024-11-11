@@ -58,7 +58,7 @@ const navigation_db = {
     name: "Project",
     // path: `${base_route}/p/:cat/:slug-:id`,
     // Not using category anymore
-    path: `${base_route}/p/:id`,
+    path: `${base_route}/project/:id`,
     icon: null,
     end: false,
   },

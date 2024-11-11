@@ -57,7 +57,7 @@ const NavigationContextProvider = ({ children }) => {
   const projectDetailsURL = (category, slug, id) => {
     // Not using category and slug anymore
     // To use it, add it in the path below and in navigation_db.js
-    const path = `${base_route}/p/${id}`;
+    const path = `${base_route}/project/${id}`;
     return path;
   };
 
