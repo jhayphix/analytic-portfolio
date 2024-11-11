@@ -50,12 +50,19 @@ const ProjectDetailsPage = () => {
   return (
     <PageTransition effect={project_details_page_effect}>
       <div className="container-lg" style={{ paddingBottom: "60px" }}>
-        <PageBannerSection pageName={project_title} />
 
-        <PortfolioBreadCrumb
+        {/* Only show when it's in story mode */}
+        {active_dashboard_story_tab === "story" && 
+
+          <> 
+            <PageBannerSection pageName={project_title} />
+            <PortfolioBreadCrumb
           project_category={project_category}
           project_name={project_title}
         />
+          </>
+
+        }
 
         <DashboardAndStoryTab />
 

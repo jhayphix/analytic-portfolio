@@ -21,22 +21,19 @@ const EmbedIframe = ({ iframe_src, iframe_height, iframe_width }) => {
   | return
   |----------------------------------------
   */
-//  const height = "650px";
- const height = "100%";
+ const height = "650px";
  const width = "100%";
 
  return (
    <div>
-    {iframeIsLoading && <DefaultSpinner />}
+     {iframeIsLoading && <DefaultSpinner />}
      <iframe
        className="iframe_outer_container"
        loading="lazy"
        title="Project embed"
-       width={width}
-       height={height}
        style={{
-        display: iframeIsLoading ? 'none' : 'block'
-      }}
+         display: iframeIsLoading ? "none" : "block",
+       }}
        onLoad={() => setIframeIsLoading(false)}
        srcDoc={`<iframe width=${width} height=${height} frameborder="0" scrolling="yes" src="${iframe_src}"></iframe>`}
      ></iframe>

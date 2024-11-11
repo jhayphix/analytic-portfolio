@@ -72,6 +72,7 @@ const ProjectContextProvider = ({ children }) => {
     useState(1);
   const [active_dashboard_story_tab, setActiveDashboardAndStoryTab] =
     useState("story");
+
   const [active_project_story_index, setActiveProjectStoryIndex] = useState(0);
 
   const [active_project_tab_name, setActiveProjectTabName] = useState("all");

@@ -30,7 +30,7 @@ const ExcelDashboardSection = () => {
   */
   return (
     <>
-      <div className="mb-lg-4 mb-3">
+      <div className="mb-lg-2 mb-2">
         <a
           href={iframe_url}
           className="view_workbook_link"
